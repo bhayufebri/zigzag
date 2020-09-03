@@ -1,0 +1,18 @@
+/* body {
+    background: #e8f5d5;
+} */
+.sidebar-nav .nav .nav-link {
+    color: #7bcc6b;
+}
+.sidebar-nav .nav .nav-item > .nav-link.active {
+    background: #d2f8cf;
+}
+.sidebar-nav ul li ul li.active .nav-link {
+    background: #e7f3e2 !important;
+}
+.breadcrumb li a {
+    color: #aaa;
+}
+.breadcrumb .active {
+    font-weight: bold;
+}
