@@ -86,6 +86,11 @@ Route::group(['middleware' => ['auth','cekauth']], function(){
         // Route::post('/user/store','UserController@store')->name('user.store');
 
         Route::get('/user/indexData','UserController@indexData')->name('user.indexData');
+        Route::post('user/lihat', 'UserController@lihat')->name('user.lihat');
+        Route::post('user/delete', 'UserController@delete')->name('user.delete');
+        Route::get('user/cetak_pdf/{id}', 'UserController@cetak_pdf')->name('user.cetak_pdf');
+
+
         Route::resource('user', 'UserController');
         // Route::put('/user/update/{id}','UserController@update')->name('user.update');
         // Route::get('/user/detail/{id}','UserController@detail')->name('user.detail');
